@@ -31,7 +31,7 @@ export default (await import("vue")).defineComponent({
   },
   methods: {
     async fetchWeatherData() {
-      const apiKey = "8331cdef4f10633c84fd856ce65588b0";
+      const apiKey = "";
       const city = this.cityname;
       const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
       await axios
