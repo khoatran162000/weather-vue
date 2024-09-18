@@ -100,7 +100,7 @@ export default (await import("vue")).defineComponent({
   },
   async created() {
     const response = await axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=8331cdef4f10633c84fd856ce65588b0`
+      `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=`
     );
     const weatherData = response.data;
     this.temperature = weatherData.main.temp;
